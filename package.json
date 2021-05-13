@@ -1,0 +1,18 @@
+{
+  "name": "binance-smart-chain-blocks",
+  "version": "1.0.0",
+  "repository": "https://github.com/InfinityWallet/BinanceSmartChain-Blocks-Subgraph",
+  "license": "GPL-3.0-or-later",
+  "scripts": {
+    "codegen": "graph codegen",
+    "build": "graph build",
+    "deploy": "graph deploy --node https://api.thegraph.com/deploy/ --ipfs https://api.thegraph.com/ipfs/ infinitywallet/binance-smart-chain-blocks",
+    "create-local": "graph create --node http://localhost:8020/ infinitywallet/binance-smart-chain-blocks",
+    "remove-local": "graph remove --node http://localhost:8020/ infinitywallet/binance-smart-chain-blocks",
+    "deploy-local": "graph deploy --node http://localhost:8020/ --ipfs http://localhost:5001 infinitywallet/binance-smart-chain-blocks"
+  },
+  "devDependencies": {
+    "@graphprotocol/graph-cli": "^0.17.1",
+    "@graphprotocol/graph-ts": "0.17.0"
+  }
+}
