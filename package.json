@@ -4,7 +4,7 @@
   "repository": "https://github.com/InfinityWallet/BinanceSmartChain-Blocks-Subgraph",
   "license": "GPL-3.0-or-later",
   "scripts": {
-    "codegen": "graph codegen",
+    "codegen": "graph codegen --output-dir src/types/",
     "build": "graph build",
     "deploy": "graph deploy --node https://api.thegraph.com/deploy/ --ipfs https://api.thegraph.com/ipfs/ infinitywallet/binance-smart-chain-blocks",
     "create-local": "graph create --node http://localhost:8020/ infinitywallet/binance-smart-chain-blocks",
